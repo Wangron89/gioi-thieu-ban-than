@@ -8,11 +8,19 @@
         scroll-behavior: smooth;
       }
       body {
-        font-family: "Segoe UI", sans-serif;
+        font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue",
+          Arial;
         margin: 0;
-        background: #f7f9fc;
-        color: #333;
-      } /* NAV */
+        color: #222;
+        /* CHANGED: sử dụng ảnh bạn cung cấp làm nền với overlay nhẹ */
+        background: linear-gradient(
+            rgba(255, 255, 255, 0.6),
+            rgba(255, 255, 255, 0.6)
+          ),
+          url("https://image.dienthoaivui.com.vn/x,webp,q90/https://dashboard.dienthoaivui.com.vn/uploads/dashboard/editor_upload/background-co-viet-nam-9.jpg")
+            center/cover no-repeat fixed;
+      }
+
       nav {
         display: flex;
         justify-content: space-between;
