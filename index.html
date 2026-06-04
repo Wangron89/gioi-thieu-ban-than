@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>24TE482 ブイ　クアン　ロン</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Segoe UI", sans-serif;
+        margin: 0;
+        background: #f7f9fc;
+        color: #333;
+      } /* NAV */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+        background: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+      nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #555;
+        position: relative;
+        font-weight: 500;
+      }
+      nav a::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background: black;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        transition: 0.3s;
+      }
+      nav a:hover::after {
+        width: 100%;
+      } /* SECTION */
+      .section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 100px 10%;
+        gap: 60px;
+      }
+      .section:nth-child(even) {
+        flex-direction: row-reverse;
+      } /* TEXT */
+      .text {
+        width: 50%;
+      }
+      .text h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      .text p {
+        line-height: 1.9;
+        margin-bottom: 15px;
+      } /* IMAGE */
+      .image {
+        width: 50%;
+      }
+      .image img {
+        width: 100%;
+        border-radius: 40% 60% 60% 40% / 50% 40% 60% 50%;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+      }
+      .image img:hover {
+        transform: scale(1.05);
+      } /* FOOTER */
+      footer {
+        text-align: center;
+        padding: 40px;
+        background: #111;
+        color: white;
+      }
+      .icons a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: #222;
+        border-radius: 50%;
+        margin: 0 8px;
+        transition: 0.3s;
+      }
+
+      .icons img {
+        width: 18px;
+        height: 18px;
+        filter: invert(1);
+      }
+
+      .icons a:hover {
+        background: #555;
+        transform: translateY(-3px);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <div><b>24TE482 ブイ　クアン　ロン</b></div>
+      <div>
+        <a href="#intro">自己紹介</a> <a href="#hobby">趣味</a>
+        <a href="#home">故郷</a> <a href="#dream">将来の夢</a>
+      </div>
+    </nav>
+    <!-- 自己紹介 -->
+    <div class="section" id="intro">
+      <div class="text">
+        <h2>自己紹介</h2>
+        <p>
+          私は第一工科大学東京上野キャンパスで情報・AI・データサイエンスを専攻している留学生です。現在はC言語を基礎として学びながら、JavaやJavaScriptなどのプログラミング言語にも取り組んでいます。IT分野に対して強い興味を持っており、日々新しい知識を学ぶことにやりがいを感じています。
+        </p>
+        <p>
+          私の長所は、継続力と責任感があることです。一度決めた目標に対して最後までやり抜く姿勢を大切にしており、難しい課題に直面してもすぐに諦めることなく、自分で調べたり周囲に相談したりしながら解決を目指します。その過程で問題解決能力も身につけてきました。
+        </p>
+        <p>
+          一方で短所は、完璧を求めすぎてしまう点です。細かい部分までこだわるあまり、時間がかかってしまうことがあります。しかし最近は優先順位を考え、効率よく作業を進めることを意識して改善しています。
+        </p>
+      </div>
+      <div class="image"><img src="anh.img/IMG_3892.jpeg" /></div>
+    </div>
+    <!-- 趣味 -->
+    <div class="section" id="hobby">
+      <div class="text">
+        <h2>趣味</h2>
+        <p>
+          私の趣味はサッカーです。子供の頃からサッカーが好きで、現在でも友人と一緒にプレーすることがあります。サッカーを通して、チームワークやコミュニケーションの重要性を学びました。試合では一人の力だけでは勝つことができないため、周囲と協力しながら行動することが大切だと実感しています。
+        </p>
+        <p>
+          また、サッカーは状況判断が非常に重要なスポーツです。プレー中に瞬時に判断し行動することで、判断力や集中力を高めることができました。この経験は、プログラミングの問題解決にも活かされていると感じています。
+        </p>
+        <p>
+          さらに、運動することでストレスを解消し、勉強とのバランスを取ることができます。これにより、日々の生活をより充実させることができています。
+        </p>
+      </div>
+      <div class="image"><img src="anh.img/IMG_5911.JPG" /></div>
+    </div>
+    <!-- 故郷 -->
+    <div class="section" id="home">
+      <div class="text">
+        <h2>故郷（ハノイ）</h2>
+        <p>
+          私の故郷はベトナムの首都ハノイです。ハノイは長い歴史と豊かな文化を持つ都市であり、古い街並みと近代的な建物が共存している点が特徴です。特に旧市街は観光地として有名で、多くの外国人観光客が訪れます。
+        </p>
+        <p>
+          また、ハノイは食文化も非常に魅力的です。フォーやバインミーなどの料理は世界的にも知られており、安くて美味しい食事を楽しむことができます。屋台文化も発展しており、街を歩くだけで様々な料理を味わうことができます。
+        </p>
+        <p>
+          さらに、ハノイの人々はとても親切で温かい性格を持っています。初めて訪れる人でも安心して過ごすことができる魅力的な都市です。
+        </p>
+      </div>
+      <div class="image">
+        <img src="anh.img/4553.jpg" />
+      </div>
+    </div>
+    <!-- 将来 -->
+    <div class="section" id="dream">
+      <div class="text">
+        <h2>将来の夢</h2>
+        <p>
+          私の将来の夢はITエンジニアとして活躍することです。特にソフトウェア開発やAI分野に興味があり、人々の生活をより便利にするシステムを開発したいと考えています。
+        </p>
+        <p>
+          日本はIT技術が進んでいる国であり、高い技術力を学ぶことができる環境が整っています。そのため、日本で経験を積みながらスキルを向上させ、将来的には国際的に活躍できるエンジニアになりたいと考えています。
+        </p>
+        <p>
+          その目標を実現するために、現在はプログラミングだけでなく、日本語や英語の学習にも力を入れています。常に成長し続ける姿勢を大切にしています。
+        </p>
+      </div>
+      <div class="image">
+        <img src="anh.img/ChatGPT Image 14_58_20 23 thg 4, 2026.png" />
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+      <div class="icons">
+        <!-- IG -->
+        <a href="https://www.instagram.com/wangron202/" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" />
+        </a>
+        <!-- FB -->
+        <a
+          href="https://www.facebook.com/profile.php?id=100070211936393&sk=about"
+          target="_blank"
+        >
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" />
+        </a>
+      </div>
+      <div class="contact">
+        <p>📞 電話番号: 090-9262-2002</p>
+        <p>📧 Email: 24TE482@ditu.jp</p>
+      </div>
+    </footer>
+  </body>
+</html>
